@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>អ្នកអាចចុចលើប៊ុតុងដើម្បីចាប់ផ្ដើមលេង</h1>  
+    <div class="img1 ">
+        <h2 id="number">Image: </h2>
+    <button type="button" onclick="Mg()">Random</button>
+    <img src="" name = "Img" alt="">
+    </div>
+    <script>
+        function Mg(){
+            var images = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"];
+            var i = Math.floor(Math.random()*6);
+            document.images["Img"].src = images[i];
+            document.getElementById("number").innerHTML = "Image:" + " " + (i+1);
+        }
+    </script>
+</body>
+</html>
